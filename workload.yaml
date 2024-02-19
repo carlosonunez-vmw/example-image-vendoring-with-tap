@@ -8,6 +8,8 @@ metadata:
     frameworks.doncio.navy.mil/requires-raise: "true"
     apps.tanzu.vmware.com/has-tests: 'true'
 spec:
+  params:
+    dockerfile: ./Dockerfile
   source:
     git:
       url: https://github.com/carlosonunez-vmw/example-image-vendoring-with-tap
