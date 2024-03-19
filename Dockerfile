@@ -13,3 +13,6 @@
 #
 # FROM artifactory.company.example/websphere-liberty:v2024.02.19.
 FROM websphere-liberty:24.0.0.1-kernel-java17-openj9
+
+COPY your-companys-root-ca.cer /etc/ssl/certificates
+RUN update-ca-certs
